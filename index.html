@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Mum ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.45),
+                                rgba(0,0,0,0.55)),
+                url("mum.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .message {
+            padding: 25px;
+            animation: appear 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #ffb6c1;
+            text-shadow: 2px 2px 10px black;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: beat 1s infinite;
+            margin: 20px;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #ff4d79;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e6004c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <h1>I LOVE YOU, MUM ❤️</h1>
+
+        <div class="heart">💖</div>
+
+        <p>
+            Dear Mum,<br>
+            You are my blessing, my strength
+            and my greatest gift.<br>
+            Thank you for your love,
+            care and sacrifices.<br>
+            I will always love you! ❤️
+        </p>
+
+        <button onclick="showMessage()">
+            Click for a surprise 💝
+        </button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Mum, you are the best! ❤️ I love you forever. 💐");
+        }
+    </script>
+</body>
+  </html>
+  
